@@ -5,8 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery | Easy Home Solutions — Interior Design Portfolio</title>
   <meta name="description" content="Browse our gallery of interior designs, modular kitchens, furniture, false ceilings, and home renovation projects by Easy Home Solutions.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a1a1a">
   <link rel="canonical" href="https://easyhomesolutions.in/gallery.html">
   <meta property="og:title" content="Gallery | Easy Home Solutions">
+  <meta property="og:description" content="Browse interior designs, modular kitchens, furniture, false ceilings, and renovation projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://easyhomesolutions.in/gallery.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Easy Home Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gallery | Easy Home Solutions">
+  <meta name="twitter:description" content="Browse our interior design and renovation gallery.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -207,8 +219,10 @@
     </section>
   </main>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image preview">
-    <button class="lightbox-close" aria-label="Close preview"><i class="fas fa-times" aria-hidden="true"></i></button>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close preview"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <button class="lightbox-prev" type="button" aria-label="Previous image"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+    <button class="lightbox-next" type="button" aria-label="Next image"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
     <img src="" alt="" id="lightbox-img">
     <div class="lightbox-caption" id="lightbox-caption"></div>
   </div>

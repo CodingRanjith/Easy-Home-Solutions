@@ -6,8 +6,20 @@
   <title>Our Projects | Easy Home Solutions — Portfolio Gallery</title>
   <meta name="description" content="View our recent home renovation and interior design projects including luxury living rooms, modern kitchens, bedroom interiors, and complete home makeovers.">
   <meta name="keywords" content="Home Renovation Projects, Interior Design Portfolio, Modular Kitchen Projects, Tirupati Interior Design">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a1a1a">
   <link rel="canonical" href="https://easyhomesolutions.in/projects.html">
   <meta property="og:title" content="Our Projects | Easy Home Solutions">
+  <meta property="og:description" content="View our recent home renovation and interior design transformations in Tirupati and Andhra Pradesh.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://easyhomesolutions.in/projects.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Easy Home Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Projects | Easy Home Solutions">
+  <meta name="twitter:description" content="View our recent home renovation and interior design transformations.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -67,12 +79,12 @@
 
     <section class="section-padding">
       <div class="container">
-        <div class="filter-buttons" data-aos="fade-up">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="kitchen">Kitchen</button>
-          <button class="filter-btn" data-filter="bedroom">Bedroom</button>
-          <button class="filter-btn" data-filter="living-room">Living Room</button>
-          <button class="filter-btn" data-filter="renovation">Renovation</button>
+        <div class="filter-buttons" data-aos="fade-up" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="kitchen" aria-pressed="false">Kitchen</button>
+          <button class="filter-btn" type="button" data-filter="bedroom" aria-pressed="false">Bedroom</button>
+          <button class="filter-btn" type="button" data-filter="living-room" aria-pressed="false">Living Room</button>
+          <button class="filter-btn" type="button" data-filter="renovation" aria-pressed="false">Renovation</button>
         </div>
 
         <div class="row g-4" id="projectGrid">
@@ -150,8 +162,10 @@
   </main>
 
   <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image preview" aria-hidden="true">
-    <button class="lightbox-close" aria-label="Close preview"><i class="fas fa-times" aria-hidden="true"></i></button>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close preview"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <button class="lightbox-prev" type="button" aria-label="Previous image"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+    <button class="lightbox-next" type="button" aria-label="Next image"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
     <img src="" alt="" id="lightbox-img">
     <div class="lightbox-caption" id="lightbox-caption"></div>
   </div>

@@ -8,6 +8,7 @@
   <meta name="keywords" content="Home Renovation Services, Interior Design Services, Modular Kitchen Designers, False Ceiling Contractors, Home Improvement Services, Electrical Services, Plumbing Services, Carpentry Services, Painting Contractors, Home Maintenance Services, Interior Designers in Tirupati, Home Renovation in Andhra Pradesh">
   <meta name="author" content="Easy Home Solutions">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1a1a1a">
   <link rel="canonical" href="https://easyhomesolutions.in/">
 
   <!-- Open Graph -->
@@ -36,37 +37,48 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   <!-- AOS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80">
   <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- Schema: Local Business -->
+  <meta name="theme-color" content="#1a1a1a">
+
+  <!-- Schema: Local Business + WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "Easy Home Solutions",
-    "description": "Premium home renovation and interior design company in Tirupati, Andhra Pradesh.",
-    "url": "https://easyhomesolutions.in",
-    "telephone": "+919391723811",
-    "email": "k.kishorereddy18@gmail.com",
-    "founder": {
-      "@type": "Person",
-      "name": "K. Kishore Reddy"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Tirupati",
-      "addressRegion": "Andhra Pradesh",
-      "addressCountry": "IN"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "09:00",
-      "closes": "19:00"
-    },
-    "areaServed": "Andhra Pradesh",
-    "priceRange": "$$"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Easy Home Solutions",
+        "url": "https://easyhomesolutions.in",
+        "description": "Premium home renovation and interior design services in Tirupati, Andhra Pradesh."
+      },
+      {
+        "@type": "HomeAndConstructionBusiness",
+        "@id": "https://easyhomesolutions.in/#business",
+        "name": "Easy Home Solutions",
+        "description": "Premium home renovation and interior design company in Tirupati, Andhra Pradesh.",
+        "url": "https://easyhomesolutions.in",
+        "telephone": "+919391723811",
+        "email": "k.kishorereddy18@gmail.com",
+        "founder": { "@type": "Person", "name": "K. Kishore Reddy" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tirupati",
+          "addressRegion": "Andhra Pradesh",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        "areaServed": "Andhra Pradesh",
+        "priceRange": "$$"
+      }
+    ]
   }
   </script>
 </head>
