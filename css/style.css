@@ -480,6 +480,10 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.service-card-img img.service-flyer {
+  object-position: left center;
   transition: transform var(--transition);
 }
 
